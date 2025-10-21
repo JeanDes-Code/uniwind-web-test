@@ -1,31 +1,17 @@
-import { StyleSheet } from 'react-native';
-
-import EditScreenInfo from '@/components/EditScreenInfo';
-import { Text, View } from '@/components/Themed';
+import { FlatList, Text, View } from 'react-native';
 
 export default function TabOneScreen() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Tab One</Text>
-      <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <EditScreenInfo path="app/(tabs)/index.tsx" />
+    <View className='flex-1 bg-red-500 border-2 border-blue-500 items-center justify-center'>
+      <Text className='text-white text-6xl'>Hello World</Text>
+
+
+      <FlatList 
+        data={[{ id: 1, name: 'John' }, { id: 2, name: 'Jane' }, { id: 3, name: 'Jim' }]}
+        renderItem={({ item }) => <Text className='text-white text-2xl'>{item.name}</Text>}
+        className='flex-1 border-2 border-green-500'
+        contentContainerClassName='bg-blue-500'
+      />
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  title: {
-    fontSize: 20,
-    fontWeight: 'bold',
-  },
-  separator: {
-    marginVertical: 30,
-    height: 1,
-    width: '80%',
-  },
-});
