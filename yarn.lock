@@ -1105,6 +1105,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@egjs/hammerjs@npm:^2.0.17":
+  version: 2.0.17
+  resolution: "@egjs/hammerjs@npm:2.0.17"
+  dependencies:
+    "@types/hammerjs": "npm:^2.0.36"
+  checksum: 10c0/dbedc15a0e633f887c08394bd636faf6a3abd05726dc0909a0e01209d5860a752d9eca5e512da623aecfabe665f49f1d035de3103eb2f9022c5cea692f9cc9be
+  languageName: node
+  linkType: hard
+
 "@emnapi/core@npm:^1.5.0":
   version: 1.6.0
   resolution: "@emnapi/core@npm:1.6.0"
@@ -2698,6 +2707,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/hammerjs@npm:^2.0.36":
+  version: 2.0.46
+  resolution: "@types/hammerjs@npm:2.0.46"
+  checksum: 10c0/f3c1cb20dc2f0523f7b8c76065078544d50d8ae9b0edc1f62fed657210ed814266ff2dfa835d2c157a075991001eec3b64c88bf92e3e6e895c0db78d05711d06
+  languageName: node
+  linkType: hard
+
 "@types/istanbul-lib-coverage@npm:*, @types/istanbul-lib-coverage@npm:^2.0.0":
   version: 2.0.6
   resolution: "@types/istanbul-lib-coverage@npm:2.0.6"
@@ -4016,9 +4032,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"expo-modules-autolinking@npm:3.0.16":
-  version: 3.0.16
-  resolution: "expo-modules-autolinking@npm:3.0.16"
+"expo-modules-autolinking@npm:3.0.17":
+  version: 3.0.17
+  resolution: "expo-modules-autolinking@npm:3.0.17"
   dependencies:
     "@expo/spawn-async": "npm:^1.7.2"
     chalk: "npm:^4.1.0"
@@ -4028,7 +4044,7 @@ __metadata:
     resolve-from: "npm:^5.0.0"
   bin:
     expo-modules-autolinking: bin/expo-modules-autolinking.js
-  checksum: 10c0/6cb382f966b42338a18a88c2bf2129043e270eebd3688646f596e0da1d8dfcbbcaa7ed132ec08d01850056c244f952ea32049f44127ed1594a36d03a001aa8c7
+  checksum: 10c0/ec8d55ccc25348af431356c77b782484b71f85e34309458dbe871a9408dc7eb9c4e16eec865ebe6033359f07bbf6735eb2e544864a3d0d335e4100ebe775a1ba
   languageName: node
   linkType: hard
 
@@ -4147,8 +4163,8 @@ __metadata:
   linkType: hard
 
 "expo@npm:~54.0.15":
-  version: 54.0.15
-  resolution: "expo@npm:54.0.15"
+  version: 54.0.16
+  resolution: "expo@npm:54.0.16"
   dependencies:
     "@babel/runtime": "npm:^7.20.0"
     "@expo/cli": "npm:54.0.12"
@@ -4166,7 +4182,7 @@ __metadata:
     expo-file-system: "npm:~19.0.17"
     expo-font: "npm:~14.0.9"
     expo-keep-awake: "npm:~15.0.7"
-    expo-modules-autolinking: "npm:3.0.16"
+    expo-modules-autolinking: "npm:3.0.17"
     expo-modules-core: "npm:3.0.22"
     pretty-format: "npm:^29.7.0"
     react-refresh: "npm:^0.14.2"
@@ -4188,7 +4204,7 @@ __metadata:
     expo: bin/cli
     expo-modules-autolinking: bin/autolinking
     fingerprint: bin/fingerprint
-  checksum: 10c0/2917e04b1fdcb5b23f1c1dcb247b8935cc8e1325e6042aa1e99414044c830ee849d550f763924ec06d2eead6617d4c53977917e1a4be66a2f712e5ff9846ebc0
+  checksum: 10c0/8fddaf9e307e9e8d87c53d7feb09b7860d728db4869b6e693fd0e947c57530f14ed2e7e59c8e485b45f13f7afaabfa50ceec286ec7760b1426be3faabe020363
   languageName: node
   linkType: hard
 
@@ -4520,6 +4536,15 @@ __metadata:
   dependencies:
     hermes-estree: "npm:0.32.0"
   checksum: 10c0/5902d2c5d347c0629fba07a47eaad5569590ac69bc8bfb2e454e08d2dfbe1ebd989d88518dca2cba64061689b5eac5960ae6bd15a4a66600bbf377498a3234b7
+  languageName: node
+  linkType: hard
+
+"hoist-non-react-statics@npm:^3.3.0":
+  version: 3.3.2
+  resolution: "hoist-non-react-statics@npm:3.3.2"
+  dependencies:
+    react-is: "npm:^16.7.0"
+  checksum: 10c0/fe0889169e845d738b59b64badf5e55fa3cf20454f9203d1eb088df322d49d4318df774828e789898dcb280e8a5521bb59b3203385662ca5e9218a6ca5820e74
   languageName: node
   linkType: hard
 
@@ -6588,6 +6613,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-is@npm:^16.7.0":
+  version: 16.13.1
+  resolution: "react-is@npm:16.13.1"
+  checksum: 10c0/33977da7a5f1a287936a0c85639fec6ca74f4f15ef1e59a6bc20338fc73dc69555381e211f7a3529b8150a1f71e4225525b41b60b52965bda53ce7d47377ada1
+  languageName: node
+  linkType: hard
+
 "react-is@npm:^18.0.0":
   version: 18.3.1
   resolution: "react-is@npm:18.3.1"
@@ -6599,6 +6631,20 @@ __metadata:
   version: 19.2.0
   resolution: "react-is@npm:19.2.0"
   checksum: 10c0/a63cb346aeced8ac0e671b0f9b33720d2906de02a066ca067075d871a5d4c64cdb328f495baf9b5842d5868c0d5edd1ce18465a7358b52f4b6aa983479c9bfa2
+  languageName: node
+  linkType: hard
+
+"react-native-gesture-handler@npm:^2.28.0":
+  version: 2.28.0
+  resolution: "react-native-gesture-handler@npm:2.28.0"
+  dependencies:
+    "@egjs/hammerjs": "npm:^2.0.17"
+    hoist-non-react-statics: "npm:^3.3.0"
+    invariant: "npm:^2.2.4"
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  checksum: 10c0/4240c8eedca69eb36b5d3e375b71867251cf8b87a755ba7066b3f73cfdbc80574042dbd4ff821041fd1539c4cd90dbf7ee34586f5a0ea6cc38052375b3169f2e
   languageName: node
   linkType: hard
 
@@ -7814,6 +7860,7 @@ __metadata:
     react: "npm:19.1.0"
     react-dom: "npm:19.1.0"
     react-native: "npm:0.81.4"
+    react-native-gesture-handler: "npm:^2.28.0"
     react-native-reanimated: "npm:~4.1.1"
     react-native-safe-area-context: "npm:~5.6.0"
     react-native-screens: "npm:~4.16.0"

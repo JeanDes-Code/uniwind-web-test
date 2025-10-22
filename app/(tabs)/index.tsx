@@ -1,17 +1,42 @@
-import { FlatList, Text, View } from 'react-native';
+import { View } from 'react-native';
+import { Gesture, GestureDetector } from 'react-native-gesture-handler';
+import Animated, { useAnimatedStyle, useSharedValue, withSpring } from 'react-native-reanimated';
 
 export default function TabOneScreen() {
+  const translateX = useSharedValue(0);
+  const translateY = useSharedValue(0);
+
+  const panGesture = Gesture.Pan()
+    .onUpdate((event) => {
+      translateX.value = event.translationX;
+      translateY.value = event.translationY;
+    })
+    .onEnd(() => {
+      translateX.value = withSpring(0);
+      translateY.value = withSpring(0);
+    });
+
+  const animatedStyle = useAnimatedStyle(() => {
+    return {
+      transform: [
+        { translateX: translateX.value },
+        { translateY: translateY.value },
+      ],
+      // Tried using or not using className: same result on web.
+      // width: 100,
+      // height: 100,
+      // backgroundColor: 'blue',
+    };
+  });
+
   return (
-    <View className='flex-1 bg-red-500 border-2 border-blue-500 items-center justify-center'>
-      <Text className='text-white text-6xl'>Hello World</Text>
-
-
-      <FlatList 
-        data={[{ id: 1, name: 'John' }, { id: 2, name: 'Jane' }, { id: 3, name: 'Jim' }]}
-        renderItem={({ item }) => <Text className='text-white text-2xl'>{item.name}</Text>}
-        className='flex-1 border-2 border-green-500'
-        contentContainerClassName='bg-blue-500'
-      />
+    <View className='flex-1 items-center justify-center bg-gray-900'>
+      <GestureDetector gesture={panGesture}>
+        <Animated.View 
+          style={animatedStyle}
+          className='w-16 h-16 bg-blue-500 rounded-lg'
+        />
+      </GestureDetector>
     </View>
   );
 }
