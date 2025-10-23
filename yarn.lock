@@ -7869,13 +7869,13 @@ __metadata:
     react-test-renderer: "npm:19.1.0"
     tailwindcss: "npm:^4.1.15"
     typescript: "npm:~5.9.2"
-    uniwind: "npm:^1.0.0-rc.3"
+    uniwind: "npm:^1.0.0-rc.4"
   languageName: unknown
   linkType: soft
 
-"uniwind@npm:^1.0.0-rc.3":
-  version: 1.0.0-rc.3
-  resolution: "uniwind@npm:1.0.0-rc.3"
+"uniwind@npm:^1.0.0-rc.4":
+  version: 1.0.0-rc.4
+  resolution: "uniwind@npm:1.0.0-rc.4"
   dependencies:
     "@tailwindcss/node": "npm:4.1.14"
     "@tailwindcss/oxide": "npm:4.1.14"
@@ -7888,7 +7888,7 @@ __metadata:
     react: ">=19.0.0"
     react-native: ">=0.81.0"
     tailwindcss: ">=4"
-  checksum: 10c0/bb5bc0d49025e31d2909903d96eb3a5ace7e6c3c7f2ab2fc2a2b9ae2abb79ce44ae5bb78e35f8efa63a5dee06d9d1878f6b9db15532c1a10db29a35f011f82fb
+  checksum: 10c0/edc687f7aeccb35abc6778e73980d0e785ef65f5a364f2a1502424c840e0a126d0ba0003ee4162ee19a95797ed66f1f0130215b55d455cbe2cdb8bb532620e74
   languageName: node
   linkType: hard
 

@@ -29,7 +29,7 @@
     "react-native-web": "~0.21.0",
     "react-native-worklets": "0.5.1",
     "tailwindcss": "^4.1.15",
-    "uniwind": "^1.0.0-rc.3"
+    "uniwind": "^1.0.0-rc.4"
   },
   "devDependencies": {
     "@babel/core": "^7.28.4",
